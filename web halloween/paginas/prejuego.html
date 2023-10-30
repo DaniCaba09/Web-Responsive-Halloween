@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pumpkin Karting</title>
+    <link rel="icon" href="icono.ico" type="image/x-icon"> 
+    <style>
+        @font-face {
+            font-family: 'halloween';
+            src: url('./font/Scary\ Halloween\ Font.ttf') format('truetype'),
+        }
+
+       body {
+            background-image: url(../img/ddw7r0r-f1430407-8be8-425e-8133-0563c66fb215.gif);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        h1{
+            font-family: 'halloween', sans-serif;   
+            font-size: 80px;
+            color: white;
+        }
+
+        h2{
+           color: rgb(253, 243, 243);
+        }
+        #contenedor {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 80%;
+        
+        }
+
+
+        #texto {
+            width: 80%;
+            height: 40%;
+            text-align: center;
+            color: rgb(209, 201, 201);
+            backdrop-filter: blur(20px);
+            border: solid rgb(245, 103, 93) 15px;
+            border-radius: 20%;
+            box-shadow:
+                0 0 5px #db7806,
+                0 0 5px rgb(245, 103, 93), 
+                0 0 10px rgb(245, 103, 93), 
+                0 0 20px rgb(245, 103, 93), 
+                0 0 25px rgb(245, 103, 93), 
+                inset 0 0 10px rgba(255,255,255,0.3);
+            font-family: 'halloween', sans-serif; 
+            max-width: 80%; /* Adjust as needed */
+            max-height: 80%; /* Adjust as needed */
+            overflow: auto;
+            font-size: 24px; /* Adjust the font size as needed */
+            /* Your existing styles for the #texto div */
+            padding: 20px;
+            margin-bottom: 20px;
+            
+        }
+
+        #boton {
+          transition: all 1s;
+          background-color: rgb(245, 97, 92); /* Green */
+          color: white;
+          border: 1px solid whitesmoke;
+          border-radius: 20px;
+          width: 270px;
+          height: 45px;
+          font-family: 'halloween', sans-serif; 
+          font-size: 35px;
+          padding: 15px 32px;
+          margin-top: 10px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          box-shadow:
+                0 0 5px #ff0000,
+                0 0 5px rgb(245, 103, 93), 
+                0 0 10px rgb(245, 103, 93), 
+                0 0 20px rgb(245, 103, 93), 
+                0 0 25px rgb(245, 103, 93), 
+                inset 0 0 10px rgba(255,255,255,0.3);
+        }
+
+        #boton:hover{
+          transform: scale(1.2);
+          transition: transform 0.3s ease;
+          background-color: lightgrey;
+          color: rgb(245, 103, 93);
+        }
+        ul {
+            list-style-image: url(./img/skullicon-removebg-preview.png);
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <h1>PUMPKIN KARTING</h1>
+        <div id="texto">
+            <h2>BIENVENIDOS A PUMPKIN KARTING. PULSA  JUGAR PARA INCIAR.</h2>
+            <ul>
+                <li>GANA EL JUGADOR QUE LLEGA ANTES A LA META.</li><br>
+                <li>COCHE VERDE: PULSA "L" PARA AVANZAR.</li><br>
+                <li>COCHE NARANJA: PULSA "A" PARA AVANZAR.</li><br>
+                <li>PROCURA SER MAS RAPIDO QUE TU CONTRINCANTE.</li><br>
+            </ul>
+        </div>
+        
+        <a href="newjuego.html" id="boton">JUGAR</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+@font-face {
+    font-family: halloween;
+    src: url(../font/Scary_Halloween_Font.ttf);
+}
+
+
+#image-container {
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.1s;
+    width: 50%;
+    max-width: 400px;
+    position: absolute;
+    left: 0;
+}
+
+#foto {
+    top: 28%;
+}
+
+#foto2 {
+    top: 35%;
+}
+
+@media (max-width: 768px) {
+    .container img {
+        width: 40%;
+        max-width: none;
+    }
+
+    #foto {
+        top: 45%;
+    }
+
+    #foto2 {
+        top: 50%;
+    }
+}
+
+.contador-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: halloween;
+    font-size: 140px;
+    color: yellow;
+}
